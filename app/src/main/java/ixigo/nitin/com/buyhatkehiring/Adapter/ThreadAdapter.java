@@ -18,9 +18,6 @@ import ixigo.nitin.com.buyhatkehiring.Modal.ThreadItem;
 import ixigo.nitin.com.buyhatkehiring.R;
 
 
-/**
- * Created by Nikil on 1/26/2017.
- */
 public class ThreadAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static String TAG = ThreadAdapter.class.getSimpleName();

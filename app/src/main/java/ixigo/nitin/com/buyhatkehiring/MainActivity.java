@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         initializeSearchView();
 
-        connectWithGoogle();
 
     }
 
@@ -233,6 +232,21 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id=item.getItemId();
+
+        if(id==R.id.backup){
+
+
+            connectWithGoogle();
+
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
